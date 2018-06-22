@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
 
+
     public static void main(String[] args) {
+
+
         Student New = new Student();
         New.setId(1);
         New.setName("John");
@@ -12,6 +17,14 @@ public class Main {
         Instructor.setSchool("North High");
         Instructor.setCourseTought("Engrish");
         Instructor.setOfficeHours("Monday thru Friay");
-        System.out.println(Instructor.getSchool() + " teaches " + Instructor.getCourseTought() + " during to following days: " + Instructor.getOfficeHours());
-    }
+        System.out.println(Instructor.getSchool() + " teaches " + Instructor.getCourseTought() + " during the following days: " + Instructor.getOfficeHours());
+
+
+        person newPerson = new person();
+        System.out.println(newPerson.getPerson());
+
+
+        }
+
+
 }
