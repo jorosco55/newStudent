@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Main {
 
 
@@ -21,7 +19,11 @@ public class Main {
 
 
         person newPerson = new person();
-        System.out.println(newPerson.getPerson());
+        System.out.println(newPerson);
+
+        Student Krista = new Student();
+        Student Tom = new Student();
+        System.out.println(Student.getNumberOfStudents());
 
 
         }

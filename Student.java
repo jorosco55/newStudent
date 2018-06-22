@@ -5,6 +5,14 @@ public class Student {
     int id;
     static int numberOfStudents = 0;
 
+    Student () {
+        numberOfStudents++;
+    }
+
+    public static int getNumberOfStudents() {
+        return numberOfStudents;
+    }
+
 
     public void setAge(int age) {
         this.age = age;
