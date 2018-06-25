@@ -1,7 +1,5 @@
-public class Student {
+public class Student extends Person {
 
-    int age;
-    String name;
     int id;
     static int numberOfStudents = 0;
 
@@ -9,26 +7,19 @@ public class Student {
         numberOfStudents++;
     }
 
-    public static int getNumberOfStudents() {
-        return numberOfStudents;
+    // Create toString method that inherits from Person
+    // Hint: first list would be something like:
+    public String toString(){
+        String s = super.toString();
+        s += "\nID: "+ id;
+        return s;
+    }
+
+    public void setRace( String r ){
+        super.setRace( r );
     }
 
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
 
     public void setId(int id) {
         this.id = id;

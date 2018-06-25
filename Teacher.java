@@ -1,33 +1,26 @@
-public class Teacher {
+
+
+public class Teacher extends Person{
+
 
     String school;
-    String courseTought;
-    String officeHours;
 
-    public String getSchool() {
-        return school;
+
+    public String toString(){
+        String sch = super.toString();
+        sch += "\nschool: "+ school;
+        return sch;
     }
 
     public void setSchool(String school) {
         this.school = school;
     }
 
-    public String getCourseTought() {
-        return courseTought;
+    public String getSchool() {
+        return school;
     }
-
-    public void setCourseTought(String courseTought){
-        this.courseTought = courseTought;
-    }
-
-    public String getOfficeHours() {
-        return officeHours;
-    }
-
-    public void setOfficeHours(String officeHours){
-        this.officeHours = officeHours;
-    }
-
 
 
 }
+
+

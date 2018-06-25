@@ -4,26 +4,37 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Student New = new Student();
-        New.setId(1);
-        New.setName("John");
-        New.setAge(20);
-        System.out.println(New.getName() + " is " + New.getAge() + " years old");
+        Student student = new Student();
+        student.setId(1);
+        student.setRace( "White" );
+        student.setName("John");
+        student.setAge(20);
+        //student.set
+        System.out.println(student.toString());
+        System.out.println();
 
 
-        Teacher Instructor = new Teacher();
-        Instructor.setSchool("North High");
-        Instructor.setCourseTought("Engrish");
-        Instructor.setOfficeHours("Monday thru Friay");
-        System.out.println(Instructor.getSchool() + " teaches " + Instructor.getCourseTought() + " during the following days: " + Instructor.getOfficeHours());
+       Teacher teach = new Teacher();
+       teach.setName("Sarah");
+       teach.setRace("White");
+       teach.setAge(28);
+       teach.setGender("Female");
+       teach.setSchool("North High Mustangs");
+       System.out.println(teach.toString());
+       System.out.println();
 
 
-        person newPerson = new person();
-        System.out.println(newPerson);
 
-        Student Krista = new Student();
-        Student Tom = new Student();
-        System.out.println(Student.getNumberOfStudents());
+        Person newPerson = new Person();
+        newPerson.setName("John Wick");
+        newPerson.setAge(23);
+        newPerson.setHeight(6);
+        newPerson.setWeight(205);
+        newPerson.setRace("white");
+
+        System.out.println(newPerson.getName() + " is a "+ newPerson.getRace() + " " + newPerson.getAge() + " year old, " + newPerson.getHeight() + " foot tall, " + newPerson.getWeight() + " pound killing machine!");
+
+
 
 
         }
